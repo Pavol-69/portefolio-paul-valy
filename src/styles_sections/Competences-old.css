@@ -1,0 +1,92 @@
+#section_competences {
+  /*Position*/
+  position: relative;
+
+  /*Dimesions*/
+  width: 100%;
+
+  /*Flex*/
+  flex-wrap: wrap;
+}
+
+#titre_comp {
+  /*Position*/
+  position: absolute;
+  top: 0px;
+  left: 20px;
+
+  /*Dimensions*/
+  height: 56px;
+}
+
+#all_comp {
+  /*Position*/
+  margin: 100px 50px 50px 50px;
+
+  /*Dimensions*/
+  max-width: 1000px;
+
+  /*Flex*/
+  flex-wrap: wrap;
+}
+
+.pck_comp {
+  /*Position*/
+  position: relative;
+  margin: 20px;
+
+  /*Style*/
+  border: solid 1px;
+  border-radius: 20px;
+
+  /*Flex*/
+  flex-wrap: wrap;
+}
+
+.trait_H_G,
+.trait_H_D,
+.trait_V_H,
+.trait_V_B {
+  /*Position*/
+  position: absolute;
+
+  /*Style*/
+  background-color: var(--clr2);
+}
+
+.trait_H_D,
+.trait_H_G {
+  /*Position*/
+  right: -41px;
+
+  /*Dimensions*/
+  height: 1px;
+  width: 40px;
+}
+
+.trait_V_B,
+.trait_V_H {
+  /*Dimensions*/
+  height: 40px;
+  width: 1px;
+}
+
+.trait_H_D {
+  /*Position*/
+  right: -41px;
+}
+
+.trait_H_G {
+  /*Position*/
+  left: -41px;
+}
+
+.trait_V_B {
+  /*Position*/
+  bottom: -41px;
+}
+
+.trait_V_H {
+  /*Position*/
+  top: -41px;
+}

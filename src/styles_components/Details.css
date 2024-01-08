@@ -1,0 +1,25 @@
+.brd_det {
+  /*Position*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  /*Dimensions*/
+  margin: auto;
+}
+
+.titre_det {
+  /*Texte*/
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.pqt_gif {
+  /*Flex*/
+  flex-wrap: wrap;
+}
+
+.desc,
+.titre_det {
+  /*Style*/
+  color: var(--white);
+}

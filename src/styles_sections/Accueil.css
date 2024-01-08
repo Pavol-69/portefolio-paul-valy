@@ -1,0 +1,72 @@
+#section_accueil {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  height: 100vh;
+  width: 100vw;
+}
+
+#tuile_accueil {
+  /*Position*/
+  position: relative;
+  margin: auto;
+
+  /*Dimensions*/
+  padding: 0px;
+
+  /*Style*/
+  text-shadow: 2px 2px 2px var(--clr1);
+}
+
+.txt_accueil {
+  /*Dimensions*/
+  margin: 0px;
+  width: 100%;
+
+  /*Style*/
+  color: var(--white);
+
+  /*Texte*/
+  font-family: "Source Code Pro";
+  text-align: center;
+}
+
+#img_pres_ctn {
+  /*Position*/
+  position: absolute;
+
+  /*Dimensions*/
+  width: 100vw;
+  height: 100vh;
+}
+
+#img_pres {
+  /*Position*/
+  position: absolute;
+  bottom: 0px;
+
+  /*Dimensions*/
+  height: 100%;
+  width: 100%;
+
+  /*Style*/
+  filter: brightness(40%);
+
+  /*Autre*/
+  object-fit: cover;
+}
+
+#acceuil_trans {
+  /*Position*/
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  /*Dimensions*/
+  height: 150px;
+
+  /*Style*/
+  background: linear-gradient(rgb(0, 0, 0, 0), var(--black));
+}

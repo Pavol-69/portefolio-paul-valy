@@ -1,0 +1,145 @@
+#section_pres {
+  /*Position*/
+  position: relative;
+  margin-top: 200px;
+
+  /*Dimensions*/
+  min-height: 300px;
+  width: 100vw;
+}
+
+#img_ctn {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  height: 40vw;
+  width: 35vw;
+
+  max-height: 400px;
+  max-width: 400px;
+
+  min-height: 300px;
+  min-width: 300px;
+
+  /*Style*/
+  border-radius: 50%;
+  border: solid 1px;
+  color: var(--clr1);
+  filter: drop-shadow(0 0 0.3rem rgb(50, 50, 50));
+  opacity: 0;
+
+  /*Autre*/
+  overflow: hidden;
+  animation-fill-mode: forwards;
+}
+
+.img_ctn {
+  &_nrm {
+    animation: anim_img 300ms ease-in;
+    animation-delay: 200ms;
+  }
+  &_rvs {
+    animation: anim_img_rvs 300ms ease-in;
+  }
+}
+
+@keyframes anim_img {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes anim_img_rvs {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+#pres_case_dsc {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  height: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  padding: 20px;
+
+  /*Texte*/
+  font-size: 1.3em;
+
+  /*Style*/
+  border: solid 1px;
+  border-radius: 20px;
+  border-color: var(--clr1);
+}
+
+p {
+  /*Dimensions*/
+  width: 100%;
+
+  /*Autre*/
+  text-align: justify;
+}
+
+/*.text_pres1_nrm {
+  animation-delay: 200ms;
+  animation: anim_txt 300ms ease-in;
+  animation-fill-mode: forwards;
+}*/
+
+#pres_case_nom,
+#pres_case_titre,
+#pres_case_ligne1,
+#pres_case_ligne2,
+#pres_case_ligne3 {
+  animation-fill-mode: forwards;
+}
+
+.txt_pres {
+  opacity: 0;
+  @for $i from 1 through 3 {
+    &#{$i} {
+      &_nrm {
+        animation: anim_txt 300ms ease-in;
+        animation-delay: 200ms + 200ms * $i;
+      }
+      &_rvs {
+        animation: anim_txt_rvs 300ms ease-in;
+      }
+    }
+  }
+}
+
+@keyframes anim_txt {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes anim_txt_rvs {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}

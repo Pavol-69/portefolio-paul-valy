@@ -1,0 +1,125 @@
+.glb_pst {
+  /*Position*/
+  margin: 40px;
+}
+
+.pastille_competences {
+  /*Dimensions*/
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+
+  /*Style*/
+  border-radius: 50%;
+
+  /*Animation*/
+  animation: ledvit 2000ms ease-in-out backwards infinite;
+  @for $i from 1 through 5 {
+    &_#{$i} {
+      animation-delay: 300ms * $i;
+    }
+  }
+}
+
+.lmt_pastille_competences {
+  /*Dimensions*/
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes levit {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.jauge {
+  /*Position*/
+  position: absolute;
+
+  /*Dimensions*/
+  height: 156px;
+  width: 156px;
+}
+
+.jauge_tel {
+  /*Position*/
+  position: absolute;
+
+  /*Dimensions*/
+  height: 136px;
+  width: 136px;
+}
+
+svg {
+  /*Position*/
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+
+  /*Dimensions*/
+  height: 100%;
+  width: 100%;
+}
+
+.cercle_fond {
+  /*Position*/
+  transform: translate(8px, 8px);
+
+  /*Style*/
+  fill: none;
+  stroke: rgb(50, 50, 50);
+  stroke-width: 16px;
+}
+
+.trait_jauge {
+  /*Position*/
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+
+  /*Dimensions*/
+  width: 1px;
+  height: 20px;
+
+  /*Style*/
+  background-color: white;
+}
+
+.cercle {
+  /*Position*/
+  transform: translate(8px, 8px);
+  stroke-dasharray: 441;
+
+  @for $i from 1 through 100 {
+    &_#{$i} {
+      stroke-dashoffset: -($i * 440/100-440);
+    }
+  }
+
+  /*Animation*/
+  animation: prct 2s forwards;
+
+  /*Style*/
+  fill: none;
+  stroke: var(--clr1);
+  stroke-width: 16px;
+  /*stroke-linecap: round;*/
+}
+
+@keyframes prct {
+  0% {
+    stroke-dashoffset: -(440/100-440);
+  }
+
+  100% {
+    stroke-dashoffset: -(80 * 440/100-440);
+  }
+}

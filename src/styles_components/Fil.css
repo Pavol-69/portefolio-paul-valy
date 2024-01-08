@@ -1,0 +1,41 @@
+#fil {
+  /*Position*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+
+  /*Dimensions*/
+  width: 10vw;
+}
+
+#fil0 {
+  /*Position*/
+  top: 120px;
+
+  /*Style*/
+  background: linear-gradient(var(--clr1), var(--clr2));
+}
+
+#filEnd {
+  /*Style*/
+  background: linear-gradient(var(--clr2), var(--clr1));
+}
+
+.pst {
+  /*Position*/
+  position: absolute;
+  right: 0px;
+
+  /*Style*/
+  border: solid;
+  border-radius: 50%;
+}
+
+.fil {
+  /*Position*/
+  position: absolute;
+
+  /*Dimensions*/
+  width: 2px;
+}

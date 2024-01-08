@@ -1,0 +1,23 @@
+.case_gif {
+  /*Position*/
+  margin: 20px;
+}
+
+.titre_gif {
+  /*Dimensions*/
+  width: 100%;
+  height: 40px;
+}
+
+.ctn_gif {
+  /*Style*/
+  border-radius: 20px;
+
+  /*Autre*/
+  overflow: hidden;
+}
+
+.gif {
+  /*Position*/
+  position: relative;
+}

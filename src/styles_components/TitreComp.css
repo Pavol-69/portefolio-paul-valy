@@ -1,0 +1,33 @@
+.pqt_title {
+  /*Position*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  /*Dimensions*/
+  margin-left: 15px;
+  margin-right: 15px;
+
+  /*Texte*/
+  color: white;
+  font-family: "Source Code Pro";
+  text-align: center;
+}
+
+.frst_band,
+.scnd_band {
+  /*Dimensions*/
+  width: 120px;
+  height: 3px;
+}
+
+.frst_band {
+  /*Style*/
+  background: linear-gradient(to right, rgb(200, 90, 0, 0), rgb(200, 90, 0));
+}
+
+.scnd_band {
+  /*Style*/
+  background: linear-gradient(to left, rgb(200, 90, 0, 0), rgb(200, 90, 0));
+}

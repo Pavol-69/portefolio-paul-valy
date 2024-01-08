@@ -1,0 +1,32 @@
+#section_projets {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  min-height: 200px;
+  width: 100vw;
+
+  /*Flex*/
+  flex-wrap: wrap;
+}
+
+#titre_proj {
+  /*Position*/
+  position: absolute;
+  top: 0px;
+  left: 20px;
+
+  /*Dimensions*/
+  height: 55px;
+}
+
+#all_proj {
+  /*Position*/
+  margin: 100px 50px 50px 50px;
+
+  /*Dimensions*/
+  max-width: 1000px;
+
+  /*Flex*/
+  flex-wrap: wrap;
+}

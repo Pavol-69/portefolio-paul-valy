@@ -1,0 +1,44 @@
+#section_competences {
+  /*Position*/
+  position: relative;
+  margin: auto;
+  margin-top: 250px;
+  margin-bottom: 50px;
+
+  /*Dimesions*/
+  min-height: 800px;
+}
+
+#all_comp {
+  /*Dimensions*/
+  height: 100%;
+  min-width: 400px;
+}
+
+.pck_comp {
+  /*Dimensions*/
+  width: 100%;
+
+  /*Flex*/
+  flex-wrap: wrap;
+}
+
+#comp_cv {
+  /*Position*/
+  margin: 20px;
+
+  /*Dimensions*/
+  height: 100%;
+  width: 40vw;
+  max-width: 580px;
+  min-width: 370px;
+
+  /*Image*/
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img_ctn {
+  /*Dimensions*/
+  height: 100%;
+}

@@ -1,0 +1,21 @@
+#section_contact {
+  /*Position*/
+  position: relative;
+
+  /*Dimensions*/
+  width: 100vw;
+  min-height: 200px;
+
+  /*Flex*/
+  flex-wrap: wrap;
+}
+
+#titre_rec {
+  /*Position*/
+  position: absolute;
+  top: 0px;
+  left: 20px;
+
+  /*Dimensions*/
+  height: 55px;
+}

@@ -1,0 +1,22 @@
+.titre_section {
+  /*Dimensions*/
+  width: 100vw;
+  margin-bottom: 10px;
+
+  /*Style*/
+  background-color: var(--black);
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  color: var(--clr1);
+
+  /*Texte*/
+  font-size: 3em;
+  font-family: Source Code Pro;
+}
+
+.txt_titre_section {
+  /*Style*/
+  color: var(--white);
+  text-shadow: 2px 2px 2px var(--clr1);
+  padding: 10px;
+}

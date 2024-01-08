@@ -4,6 +4,7 @@ import TitreSection from "../components/TitreSection.js";
 import DetailsRctSab from "../components/DetailsRctSab";
 import DetailsPrtFol from "../components/DetailsPrtFol";
 import DetailsPavMag from "../components/DetailsPavMag";
+import DetailsVBA from "../components/DetailsVBA";
 
 // CSS
 import "../styles_components/CSSGeneral.css";
@@ -27,6 +28,7 @@ function Competences({
   const [detRctSab, setDetRctSab] = useState(false);
   const [detPavMag, setDetPavMag] = useState(false);
   const [detPrtFol, setDetPrtFol] = useState(false);
+  const [detVBA, setDetVBA] = useState(false);
   const [leftSubMenu, setLeftSubMenu] = useState("100vw");
 
   return (
@@ -49,10 +51,15 @@ function Competences({
             useFireBase={false}
             useExpress={true}
             useCSS={true}
+            useVBA={false}
+            useCatia={false}
+            useOffice={false}
             mySet={setDetRctSab}
             setLeftSubMenu={setLeftSubMenu}
             refProj={refProj}
             index={1}
+            site={"https://lesrecettesdesabine-1b41199a24fd.herokuapp.com/"}
+            git={"https://github.com/Pavol-69/les-recettes-de-sabine"}
           />
           <TuileProj
             tailleTel={tailleTel}
@@ -69,10 +76,15 @@ function Competences({
             useFireBase={false}
             useExpress={true}
             useCSS={true}
+            useVBA={false}
+            useCatia={false}
+            useOffice={false}
             mySet={setDetPavMag}
             setLeftSubMenu={setLeftSubMenu}
             refProj={refProj}
             index={2}
+            site={"https://pavolmagic-c76d6933877e.herokuapp.com/"}
+            git={"https://github.com/Pavol-69/pavols-magic"}
           />
           <TuileProj
             tailleTel={tailleTel}
@@ -89,10 +101,40 @@ function Competences({
             useFireBase={true}
             useExpress={false}
             useCSS={true}
+            useVBA={false}
+            useCatia={false}
+            useOffice={false}
             mySet={setDetPrtFol}
             setLeftSubMenu={setLeftSubMenu}
             refProj={refProj}
             index={3}
+            site={""}
+            git={"https://github.com/Pavol-69/portefolio-paul-valy"}
+          />
+          <TuileProj
+            tailleTel={tailleTel}
+            img={prtFol}
+            name={"Macros VBA"}
+            useReact={false}
+            usePSQL={false}
+            useNodeJS={false}
+            useMongoDB={false}
+            useJS={false}
+            useHTML={false}
+            useHeroku={false}
+            useGit={false}
+            useFireBase={false}
+            useExpress={false}
+            useCSS={false}
+            useVBA={true}
+            useCatia={true}
+            useOffice={true}
+            mySet={setDetVBA}
+            setLeftSubMenu={setLeftSubMenu}
+            refProj={refProj}
+            index={4}
+            site={""}
+            git={""}
           />
         </div>
       </div>
@@ -119,6 +161,14 @@ function Competences({
         {detPrtFol ? (
           <DetailsPrtFol
             setDetPrtFol={setDetPrtFol}
+            setLeftSubMenu={setLeftSubMenu}
+            tailleTel={tailleTel}
+            tailleOrdi={tailleOrdi}
+          />
+        ) : null}
+        {detVBA ? (
+          <DetailsVBA
+            setDetVBA={setDetVBA}
             setLeftSubMenu={setLeftSubMenu}
             tailleTel={tailleTel}
             tailleOrdi={tailleOrdi}

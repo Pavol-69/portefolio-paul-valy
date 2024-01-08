@@ -22,6 +22,11 @@ import Git from "../datas/icones/Git.svg";
 import Firebase from "../datas/icones/Firebase.svg";
 import Express from "../datas/icones/Express.png";
 import CSS from "../datas/icones/CSS.svg";
+import VBA from "../datas/icones/VBA.jpg";
+import Catia from "../datas/icones/Catia.png";
+import Office from "../datas/icones/Office.png";
+import CPP from "../datas/icones/CPP.png";
+import MatLab from "../datas/icones/MatLab.svg";
 
 function Competences({
   tailleOrdi,
@@ -111,6 +116,30 @@ function Competences({
               refComp={refComp}
               dec={300}
             />
+            <PastilleComp
+              tailleTel={tailleTel}
+              img={VBA}
+              rad={true}
+              prc={100}
+              refComp={refComp}
+              dec={300}
+            />
+            <PastilleComp
+              tailleTel={tailleTel}
+              img={CPP}
+              rad={false}
+              prc={60}
+              refComp={refComp}
+              dec={300}
+            />
+            <PastilleComp
+              tailleTel={tailleTel}
+              img={MatLab}
+              rad={false}
+              prc={80}
+              refComp={refComp}
+              dec={300}
+            />
           </div>
         </div>
         <div id="pck_tools" className="elm_ct colonne">
@@ -140,6 +169,35 @@ function Competences({
               refComp={refComp}
               dec={100}
             />
+          </div>
+          <div id="pck_soft" className="elm_ct colonne">
+            <TitreComp title={"Logiciels"} />
+            <div className="pck_comp elm_ct ligne">
+              <PastilleComp
+                tailleTel={tailleTel}
+                img={VSC}
+                rad={true}
+                prc={60}
+                refComp={refComp}
+                dec={100}
+              />
+              <PastilleComp
+                tailleTel={tailleTel}
+                img={Office}
+                rad={false}
+                prc={100}
+                refComp={refComp}
+                dec={-100}
+              />
+              <PastilleComp
+                tailleTel={tailleTel}
+                img={Catia}
+                rad={false}
+                prc={100}
+                refComp={refComp}
+                dec={-100}
+              />
+            </div>
           </div>
         </div>
       </div>

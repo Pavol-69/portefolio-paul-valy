@@ -15,6 +15,11 @@
 .pst_proj_titre {
   /*Dimensions*/
   padding: 10px;
+  height: 50px;
+
+  /*Style*/
+  border: solid 1px;
+  border-color: var(--blackb);
 }
 
 .pst_proj_pqt_comp {
@@ -42,7 +47,7 @@
 }
 
 .anim {
-  @for $i from 1 through 3 {
+  @for $i from 1 through 4 {
     &#{$i} {
       animation: animProj 500ms ease-in forwards;
       animation-delay: ($i - 1) * 200ms;

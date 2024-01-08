@@ -15,6 +15,9 @@ import logoGit from "../datas/icones/Git.svg";
 import logoFirebase from "../datas/icones/Firebase.svg";
 import logoExpress from "../datas/icones/Express.png";
 import logoCSS from "../datas/icones/CSS.svg";
+import logoVBA from "../datas/icones/VBA.jpg";
+import logoCatia from "../datas/icones/Catia.png";
+import logoOffice from "../datas/icones/Office.png";
 
 // Autre
 import React, { useState } from "react";
@@ -35,6 +38,9 @@ function TuileProj({
   useFireBase,
   useExpress,
   useCSS,
+  useVBA,
+  useCatia,
+  useOffice,
   setLeftSubMenu,
   refProj,
   index,
@@ -80,8 +86,10 @@ function TuileProj({
       >
         <img className="lmt_img" src={img} />
       </div>
-      <div className="pst_proj_titre elm_ct txt_1_5 gras txt_blc">{name}</div>
-      <div className="pst_proj_pqt_comp elm_ct">
+      <div className="pst_proj_titre elm_ct txt_1_5 gras txt_blc bg_nrb">
+        {name}
+      </div>
+      <div className="pst_proj_pqt_comp elm_ct bg_nrb">
         {useHTML ? (
           <div className="pst_proj_comp">
             <img className="lmt_img" src={logoHTML} />
@@ -137,6 +145,21 @@ function TuileProj({
             <img className="lmt_img" src={logoGit} />
           </div>
         ) : null}
+        {useVBA ? (
+          <div className="pst_proj_comp">
+            <img className="lmt_img" src={logoVBA} />
+          </div>
+        ) : null}
+        {useOffice ? (
+          <div className="pst_proj_comp">
+            <img className="lmt_img" src={logoOffice} />
+          </div>
+        ) : null}
+        {useCatia ? (
+          <div className="pst_proj_comp">
+            <img className="lmt_img" src={logoCatia} />
+          </div>
+        ) : null}
       </div>
       <div
         className="pst_comp_menu elm_ct colonne"
@@ -155,13 +178,15 @@ function TuileProj({
           Détails
         </div>
         {site === "" ? null : (
-          <a href={site} className="btn">
+          <a href={site} className="btn no_udl">
             Aller sur le site
           </a>
         )}
-        <a href={git} className="btn">
-          GitHub
-        </a>
+        {git === "" ? null : (
+          <a href={git} className="btn no_udl">
+            GitHub
+          </a>
+        )}
       </div>
     </div>
   );

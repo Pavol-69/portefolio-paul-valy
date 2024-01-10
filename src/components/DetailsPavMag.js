@@ -24,37 +24,59 @@ function DetailsPavMag({ setDetPavMag, setLeftSubMenu, tailleTel }) {
         </p>
         <p>
           Fan du jeu de cartes Magic The Gathering, mon but ici était de
-          reproduire le site <a href="https://www.archidekt.com/">Archidekt</a>{" "}
-          non pas en terme d'esthétique, mais en terme de fonctionnalités :
+          m'inspirer du site{" "}
+          <a style={{ color: "var(--clr1)" }} href="https://www.archidekt.com/">
+            Archidekt
+          </a>{" "}
+          afin de créer un site 100% fonctionnel en intégrant des fonctions
+          aussi bien FrontEnd que BackEnd :
         </p>
         <ul>
-          <li>
-            Gestion des utilisateurs
-            <ul>
-              <li>Inscription</li>
-              <li>Connexion</li>
-              <li>Desinscription</li>
-              <li>
-                Possibilité de modifier le contenu des pages, mais uniquement
-                s'ils en sont les propriétaires
-              </li>
-            </ul>
-          </li>
-          <li>
-            Gestion d'une base de données regroupant toutes les listes de cartes
-            <ul>
-              <li>Ajout d'une liste</li>
-              <li>Modification</li>
-              <li>Suppression</li>
-              <li>
-                Mise à jour de ce qui est affiché dynamiquement en fonction de
-                ce qui est renseigné dans la base de données
-              </li>
-            </ul>
-          </li>
-          <li>Fonction recherche</li>
-          <li>Effet de cascade lorsqu'on passe sur les cartes</li>
-          <li>Fonction Drag & Drop</li>
+          <p>
+            <li>
+              Intégration d'une API pour avoir de base un pool de cartes avec
+              toutes leurs informations
+            </li>
+          </p>
+          <p>
+            <li>
+              Gestion des utilisateurs
+              <ul>
+                <li>Inscription</li>
+                <li>Connexion</li>
+                <li>Desinscription</li>
+              </ul>
+            </li>
+          </p>
+          <p>
+            <li>
+              Gestion des cartes
+              <ul>
+                <li>Ajout d'une liste, propre à l'utilisateur</li>
+                <li>Modification</li>
+                <li>Suppression</li>
+                <li>
+                  Possibilité de groupes de cartes personnalisés dans chaque
+                  liste
+                </li>
+                <li>Sauvegarde des chaque liste dans une bdd</li>
+              </ul>
+            </li>
+          </p>
+          <p>
+            <li>
+              Intégration de fonctions FrontEnd directement inspirées du site
+              référence
+              <ul>
+                <li>Fonction recherche</li>
+                <li>Effet de cascade lorsqu'on passe sur les cartes</li>
+                <li>
+                  Fonction Drag & Drop pour trier les cartes dans les groupes
+                  manuellement
+                </li>
+              </ul>
+            </li>
+          </p>
         </ul>
       </div>
       <div className="pqt_gif elm_ct">

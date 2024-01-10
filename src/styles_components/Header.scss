@@ -66,6 +66,48 @@ header {
   opacity: 0.5;
 }
 
+.btn_dwl {
+  /*Position*/
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 30px;
+
+  /*Dimensions*/
+  height: 50px;
+  width: 80px;
+
+  /*Style*/
+  border-radius: 10px;
+  border: solid 1px;
+  border-color: var(--clr1);
+
+  /*Animation*/
+  transition: 0.5s;
+}
+
+.btn_dwl:hover {
+  /*Style*/
+  background-color: var(--clr1);
+}
+
+#case_icon_dwl {
+  /*Position*/
+  position: relative;
+  transform: rotate(-90deg);
+  padding-left: 10px;
+
+  /*Dimensions*/
+  width: 20px;
+}
+
+#icon_dwl {
+  /*Position*/
+  position: absolute;
+  left: 0px;
+  top: -10px;
+}
+
 .btn_hd,
 .btn_hd_tel {
   /*Centrage*/

@@ -42,18 +42,17 @@ function Presentation({
   return (
     <div
       id="section_pres"
-      className="bg_nr"
       ref={refPres}
       style={{
-        height: tailleTel ? null : "500px",
         opacity: toShowElm ? 1 : 0,
+        marginTop: tailleTel ? "0px" : "150px",
+        marginBottom: tailleTel ? "50px" : "50px",
       }}
     >
       <TitreSection tailleTel={tailleTel} title={"Présentation"} fndNr={true} />
       <div
-        className={`bg_nr section tst05 elm_ct ${
-          tailleTel ? "colonne" : "ligne"
-        }`}
+        className={`section tst05 elm_ct ${tailleTel ? "colonne" : "ligne"}`}
+        style={{ margin: tailleTel ? "0px" : "50px" }}
       >
         <div id="pres_case_img" className="elm_ct">
           <div
@@ -72,14 +71,16 @@ function Presentation({
         </div>
         <div
           id="pres_case_dsc"
-          className="txt_blc txt_1 elm_ct colonne bg_nrb"
+          className={`txt_pres txt_blc txt_1 elm_ct colonne ${
+            toShow ? (toShowElm ? "txt_pres1_nrm" : "txt_pres1_rvs") : null
+          }`}
           style={{ width: tailleTel ? "80vw" : "50vw" }}
         >
           <div>
             <p
               id="pres_case_ligne1"
               className={`txt_pres ${
-                toShow ? (toShowElm ? "txt_pres1_nrm" : "txt_pres1_rvs") : null
+                toShow ? (toShowElm ? "txt_pres2_nrm" : "txt_pres2_rvs") : null
               } tst05 txt_white`}
             >
               Bonjour, et bienvenue sur mon portefolio.
@@ -87,26 +88,55 @@ function Presentation({
             <p
               id="pres_case_ligne2"
               className={`txt_pres ${
-                toShow ? (toShowElm ? "txt_pres2_nrm" : "txt_pres2_rvs") : null
+                toShow ? (toShowElm ? "txt_pres3_nrm" : "txt_pres3_rvs") : null
               } tst05 txt_white`}
             >
-              Après avoir acquis une expérience significative de 7 années en
-              tant qu'Ingénieur Mécanique dans le secteur de l'automobile, j'ai
-              décidé de me reconvertir dans le domaine du développement web,
-              suite à une formation en autodidacte.
+              Je m'appelle <span className="txt_clr1">Paul Valy</span>, j'ai 32
+              ans, et je suis à le recherche d'opportunités pour un poste de{" "}
+              <span className="txt_clr1">Développeur Web</span>.
             </p>
             <p
               id="pres_case_ligne3"
               className={`txt_pres ${
-                toShow ? (toShowElm ? "txt_pres3_nrm" : "txt_pres3_rvs") : null
+                toShow ? (toShowElm ? "txt_pres4_nrm" : "txt_pres4_rvs") : null
               } tst05 txt_white`}
             >
-              Animé par une passion croissante pour ce nouveau domaine, je suis
-              constamment en quête d'apprentissage et désire renforcer
-              continuellement mes compétences. Ma nature inventive, ma ténacité
-              et ma curiosité sont autant d'atouts qui me permettront de
-              surmonter les défis rencontrés et de m'épanouir dans ce nouvel
-              univers professionnel.
+              Après avoir acquis une expérience significative de 7 années en
+              tant qu'
+              <span className="txt_clr1">Ingénieur Mécanique</span> dans le
+              secteur de l'automobile, j'ai décidé de me{" "}
+              <span className="txt_clr1">reconvertir</span> dans le domaine du{" "}
+              <span className="txt_clr1">développement web</span>, suite à une{" "}
+              <span className="txt_clr1">formation en autodidacte</span>.
+            </p>
+
+            <p
+              id="pres_case_ligne4"
+              className={`txt_pres ${
+                toShow ? (toShowElm ? "txt_pres5_nrm" : "txt_pres5_rvs") : null
+              } tst05 txt_white`}
+            >
+              Tenant absolument à créer des{" "}
+              <span className="txt_clr1">sites web 100% fonctionnel</span> pour
+              me former, j'ai pu développer mes{" "}
+              <span className="txt_clr1">capacités</span> autant en{" "}
+              <span className="txt_clr1">FrontEnd</span> qu'en{" "}
+              <span className="txt_clr1">BackEnd</span>.
+            </p>
+            <p
+              id="pres_case_ligne5"
+              className={`txt_pres ${
+                toShow ? (toShowElm ? "txt_pres6_nrm" : "txt_pres6_rvs") : null
+              } tst05 txt_white`}
+            >
+              Animé par une <span className="txt_clr1">passion</span> croissante
+              pour ce nouveau domaine, je suis constamment en quête
+              d'apprentissage et désire renforcer continuellement mes
+              compétences. Ma <span className="txt_clr1">nature inventive</span>
+              , ma <span className="txt_clr1">ténacité</span> et ma{" "}
+              <span className="txt_clr1">curiosité</span> sont autant d'atouts
+              qui me permettront de surmonter les défis rencontrés et de
+              m'épanouir dans ce nouvel univers professionnel.
             </p>
           </div>
         </div>

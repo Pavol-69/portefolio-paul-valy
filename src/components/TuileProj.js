@@ -178,12 +178,12 @@ function TuileProj({
           Détails
         </div>
         {site === "" ? null : (
-          <a href={site} className="btn no_udl">
+          <a href={site} target="_blank" className="btn no_udl">
             Aller sur le site
           </a>
         )}
         {git === "" ? null : (
-          <a href={git} className="btn no_udl">
+          <a href={git} target="_blank" className="btn no_udl">
             GitHub
           </a>
         )}

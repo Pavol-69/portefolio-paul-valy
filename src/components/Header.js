@@ -1,20 +1,17 @@
 // CSS
 import "../styles_components/CSSGeneral.css";
 import "../styles_components/Header.scss";
-
 import Burger from "../components/Burger";
+
+// Documents
+import CV from "../datas/documents/CV_Paul_Valy.pdf";
 
 // Autre
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "font-awesome/css/font-awesome.min.css";
-import {
-  faChevronDown,
-  faUser,
-  faMagnifyingGlass,
-  faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 function Header({
   tailleOrdi,
@@ -56,6 +53,17 @@ function Header({
       <div id="hd_blur"></div>
       <div id="hd_color"></div>
 
+      <a
+        className="btn_dwl elm_ct txt_blc txt_1_5 crs_ptr gras no_udl"
+        href={CV}
+        download="CV Paul Valy"
+      >
+        CV
+        <div id="case_icon_dwl" className="txt_blc">
+          <FontAwesomeIcon id="icon_dwl" icon={faDownload} />
+        </div>
+      </a>
+
       <Burger
         tailleTel={tailleTel}
         bigMenu={bigMenu}
@@ -94,7 +102,7 @@ function Header({
           }2 btn_hd_tel btn_hd_tel_2`}
           onClick={(e) => {
             setBigMenu(false);
-            myScroll(refPres, -180);
+            myScroll(refPres, -80);
           }}
           style={{
             opacity: bigMenu ? 0 : 1,

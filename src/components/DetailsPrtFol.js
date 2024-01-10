@@ -10,20 +10,8 @@ function DetailsPrtFol({ setDetPrtFol, setLeftSubMenu, tailleTel }) {
     >
       <div className="titre_det">Description</div>
       <div className="desc">
-        <p>
-          Site Portefolio dont le but est de mettre en avant les compétences
-          acquises lors de ma formation autodidacte
-        </p>
-        <p>Les challenges pour ce site ont été :</p>
-        <ul>
-          <li>Afficher les éléments en fonction de scroll de la page</li>
-          <li>
-            Rendre le site responsive et faire en sorte que chaque élément reste
-            bien aligné avec ce qui lui est associé
-          </li>
-        </ul>
+        <p>Site Portefolio sur lequel vous êtes actuellement</p>
       </div>
-      <div className="pqt_gif elm_ct"></div>
       <div
         className="btn"
         onClick={(e) => {

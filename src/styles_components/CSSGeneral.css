@@ -246,7 +246,22 @@ html {
 
   /*Autre*/
   transition: 0.5s;
+
+  /*ScrollBar*/
   overflow: auto;
+}
+
+.side_board::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+.side_board::-webkit-scrollbar-track {
+  background: rgb(100, 100, 100); /* color of the tracking area */
+}
+
+.side_board::-webkit-scrollbar-thumb {
+  background-color: var(--clr1); /* color of the scroll thumb */
+  border-radius: 8px; /* roundness of the scroll thumb */
 }
 
 .name_menu {

@@ -1,7 +1,6 @@
 #section_pres {
   /*Position*/
   position: relative;
-  margin-top: 200px;
 
   /*Dimensions*/
   min-height: 300px;
@@ -109,14 +108,14 @@ p {
 
 .txt_pres {
   opacity: 0;
-  @for $i from 1 through 3 {
+  @for $i from 1 through 6 {
     &#{$i} {
       &_nrm {
-        animation: anim_txt 300ms ease-in;
+        animation: anim_txt 300ms ease-in forwards;
         animation-delay: 200ms + 200ms * $i;
       }
       &_rvs {
-        animation: anim_txt_rvs 300ms ease-in;
+        animation: anim_txt_rvs 300ms ease-in forwards;
       }
     }
   }

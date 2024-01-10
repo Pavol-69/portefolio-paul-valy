@@ -9,8 +9,12 @@
 
 .titre_det {
   /*Texte*/
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
+  color: var(--white);
+  text-shadow: 2px 2px 2px var(--clr1);
+  padding: 10px;
+  font-family: Source Code Pro;
 }
 
 .pqt_gif {
@@ -18,8 +22,9 @@
   flex-wrap: wrap;
 }
 
-.desc,
-.titre_det {
+.desc {
   /*Style*/
   color: var(--white);
+  font-family: Source Code Pro;
+  font-size: 1.3em;
 }

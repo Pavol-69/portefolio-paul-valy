@@ -14,6 +14,7 @@ import "../styles_sections/Projets.css";
 import rctSab from "../datas/images/les_recettes_de_sabine.png";
 import pavMag from "../datas/images/pavol_s_magic.png";
 import prtFol from "../datas/images/portefolio.png";
+import macro from "../datas/images/macro.png";
 
 // Autre
 import React, { useState, useEffect } from "react";
@@ -38,31 +39,6 @@ function Competences({
         <div id="all_proj" className="elm_ct">
           <TuileProj
             tailleTel={tailleTel}
-            img={rctSab}
-            name={"Les Recettes de Sabine"}
-            useReact={true}
-            usePSQL={true}
-            useNodeJS={true}
-            useMongoDB={false}
-            useJS={true}
-            useHTML={true}
-            useHeroku={true}
-            useGit={true}
-            useFireBase={false}
-            useExpress={true}
-            useCSS={true}
-            useVBA={false}
-            useCatia={false}
-            useOffice={false}
-            mySet={setDetRctSab}
-            setLeftSubMenu={setLeftSubMenu}
-            refProj={refProj}
-            index={1}
-            site={"https://lesrecettesdesabine-1b41199a24fd.herokuapp.com/"}
-            git={"https://github.com/Pavol-69/les-recettes-de-sabine"}
-          />
-          <TuileProj
-            tailleTel={tailleTel}
             img={pavMag}
             name={"Pavol's Magic"}
             useReact={true}
@@ -82,9 +58,34 @@ function Competences({
             mySet={setDetPavMag}
             setLeftSubMenu={setLeftSubMenu}
             refProj={refProj}
-            index={2}
+            index={1}
             site={"https://pavolmagic-c76d6933877e.herokuapp.com/"}
             git={"https://github.com/Pavol-69/pavols-magic"}
+          />
+          <TuileProj
+            tailleTel={tailleTel}
+            img={rctSab}
+            name={"Les Recettes de Sabine"}
+            useReact={true}
+            usePSQL={true}
+            useNodeJS={true}
+            useMongoDB={false}
+            useJS={true}
+            useHTML={true}
+            useHeroku={true}
+            useGit={true}
+            useFireBase={false}
+            useExpress={true}
+            useCSS={true}
+            useVBA={false}
+            useCatia={false}
+            useOffice={false}
+            mySet={setDetRctSab}
+            setLeftSubMenu={setLeftSubMenu}
+            refProj={refProj}
+            index={2}
+            site={"https://lesrecettesdesabine-1b41199a24fd.herokuapp.com/"}
+            git={"https://github.com/Pavol-69/les-recettes-de-sabine"}
           />
           <TuileProj
             tailleTel={tailleTel}
@@ -113,7 +114,7 @@ function Competences({
           />
           <TuileProj
             tailleTel={tailleTel}
-            img={prtFol}
+            img={macro}
             name={"Macros VBA"}
             useReact={false}
             usePSQL={false}

@@ -1,7 +1,6 @@
 .titre_section {
   /*Dimensions*/
   width: 100vw;
-  margin-bottom: 10px;
 
   /*Style*/
   background-color: var(--black);

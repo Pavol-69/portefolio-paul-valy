@@ -39,20 +39,20 @@ function Competences({
     <div ref={refComp} id="section_competences" className={"elm_ct colonne"}>
       <TitreSection tailleTel={tailleTel} title={"Compétences"} fndNr={true} />
       <div id="all_comp" className="elm_ct colonne">
-        <div id="pck_front_end" className="elm_ct colonne">
+        <div id="pck_front_end" className="elm_ct pck_comp_title colonne">
           <TitreComp title={"FrontEnd"} />
           <div className="pck_comp elm_ct ligne">
             <PastilleComp
               tailleTel={tailleTel}
               img={React}
               rad={false}
-              prc={80}
+              prc={85}
               refComp={refComp}
               dec={700}
             />
           </div>
         </div>
-        <div id="pck_back_end" className="elm_ct colonne">
+        <div id="pck_back_end" className="elm_ct pck_comp_title colonne">
           <TitreComp title={"BackEnd"} />
           <div className="pck_comp elm_ct ligne">
             <PastilleComp
@@ -83,20 +83,20 @@ function Competences({
               tailleTel={tailleTel}
               img={MongoDB}
               rad={false}
-              prc={90}
+              prc={70}
               refComp={refComp}
               dec={500}
             />
           </div>
         </div>
-        <div id="pck_lang" className="elm_ct colonne">
+        <div id="pck_lang" className="elm_ct pck_comp_title colonne">
           <TitreComp title={"Langages"} />
           <div className="pck_comp elm_ct ligne">
             <PastilleComp
               tailleTel={tailleTel}
               img={JS}
               rad={true}
-              prc={95}
+              prc={85}
               refComp={refComp}
               dec={300}
             />
@@ -104,7 +104,7 @@ function Competences({
               tailleTel={tailleTel}
               img={HTML}
               rad={false}
-              prc={95}
+              prc={90}
               refComp={refComp}
               dec={300}
             />
@@ -112,7 +112,7 @@ function Competences({
               tailleTel={tailleTel}
               img={CSS}
               rad={false}
-              prc={95}
+              prc={90}
               refComp={refComp}
               dec={300}
             />
@@ -142,7 +142,7 @@ function Competences({
             />
           </div>
         </div>
-        <div id="pck_tools" className="elm_ct colonne">
+        <div id="pck_tools" className="elm_ct pck_comp_title colonne">
           <TitreComp title={"Outils"} />
           <div className="pck_comp elm_ct ligne">
             <PastilleComp
@@ -151,7 +151,7 @@ function Competences({
               rad={true}
               prc={60}
               refComp={refComp}
-              dec={100}
+              dec={0}
             />
             <PastilleComp
               tailleTel={tailleTel}
@@ -159,7 +159,7 @@ function Competences({
               rad={false}
               prc={60}
               refComp={refComp}
-              dec={100}
+              dec={0}
             />
             <PastilleComp
               tailleTel={tailleTel}
@@ -167,19 +167,19 @@ function Competences({
               rad={false}
               prc={60}
               refComp={refComp}
-              dec={100}
+              dec={0}
             />
           </div>
-          <div id="pck_soft" className="elm_ct colonne">
+          <div id="pck_soft" className="elm_ct pck_comp_title colonne">
             <TitreComp title={"Logiciels"} />
             <div className="pck_comp elm_ct ligne">
               <PastilleComp
                 tailleTel={tailleTel}
                 img={VSC}
                 rad={true}
-                prc={60}
+                prc={75}
                 refComp={refComp}
-                dec={100}
+                dec={-300}
               />
               <PastilleComp
                 tailleTel={tailleTel}
@@ -187,7 +187,7 @@ function Competences({
                 rad={false}
                 prc={100}
                 refComp={refComp}
-                dec={-100}
+                dec={-300}
               />
               <PastilleComp
                 tailleTel={tailleTel}
@@ -195,7 +195,7 @@ function Competences({
                 rad={false}
                 prc={100}
                 refComp={refComp}
-                dec={-100}
+                dec={-300}
               />
             </div>
           </div>

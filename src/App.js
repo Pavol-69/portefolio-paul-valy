@@ -85,20 +85,20 @@ function App() {
           refPres={refPres}
         />
 
-        <Competences
-          tailleOrdi={tailleOrdi}
-          tailleInt1={tailleInt1}
-          tailleInt2={tailleInt2}
-          tailleTel={tailleTel}
-          refComp={refComp}
-        />
-
         <Projets
           tailleOrdi={tailleOrdi}
           tailleInt1={tailleInt1}
           tailleInt2={tailleInt2}
           tailleTel={tailleTel}
           refProj={refProj}
+        />
+
+        <Competences
+          tailleOrdi={tailleOrdi}
+          tailleInt1={tailleInt1}
+          tailleInt2={tailleInt2}
+          tailleTel={tailleTel}
+          refComp={refComp}
         />
 
         <Contact

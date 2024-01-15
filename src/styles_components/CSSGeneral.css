@@ -5,7 +5,7 @@
 html {
   /*Variables Générales*/
   --white: rgb(255, 255, 255);
-  --black: rgb(0, 0, 0);
+  --black: rgb(5, 5, 5);
   --blackb: rgb(50, 50, 50);
   --clr1: rgb(200, 90, 0);
   --clr1b: rgb(255, 145, 55);
@@ -249,6 +249,7 @@ html {
 
   /*ScrollBar*/
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .side_board::-webkit-scrollbar {
@@ -308,9 +309,4 @@ html {
 .btn:hover {
   /*Style*/
   background-color: var(--clr1);
-}
-
-p {
-  /*Texte*/
-  text-align: justify;
 }

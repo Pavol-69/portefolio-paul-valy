@@ -118,22 +118,6 @@ function Header({
           }3 btn_hd_tel btn_hd_tel_3`}
           onClick={(e) => {
             setBigMenu(false);
-            myScroll(refComp, -80);
-          }}
-          style={{
-            opacity: bigMenu ? 0 : 1,
-            right: isLoaded ? "0px" : "-220px",
-          }}
-        >
-          Compétences
-        </div>
-
-        <div
-          className={`${
-            isLoaded ? (bigMenu ? "hidden" : "show") : null
-          }4 btn_hd_tel btn_hd_tel_4`}
-          onClick={(e) => {
-            setBigMenu(false);
             myScroll(refProj, -80);
           }}
           style={{
@@ -142,6 +126,22 @@ function Header({
           }}
         >
           Projets
+        </div>
+
+        <div
+          className={`${
+            isLoaded ? (bigMenu ? "hidden" : "show") : null
+          }4 btn_hd_tel btn_hd_tel_4`}
+          onClick={(e) => {
+            setBigMenu(false);
+            myScroll(refComp, -80);
+          }}
+          style={{
+            opacity: bigMenu ? 0 : 1,
+            right: isLoaded ? "0px" : "-220px",
+          }}
+        >
+          Compétences
         </div>
 
         <div
@@ -188,19 +188,19 @@ function Header({
             <div
               className="btn_hd"
               onClick={(e) => {
-                myScroll(refComp, -80);
+                myScroll(refProj, -80);
               }}
             >
-              Compétences
+              Projets
             </div>
 
             <div
               className="btn_hd"
               onClick={(e) => {
-                myScroll(refProj, -80);
+                myScroll(refComp, -80);
               }}
             >
-              Projets
+              Compétences
             </div>
 
             <div

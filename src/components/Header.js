@@ -179,7 +179,7 @@ function Header({
             <div
               className="btn_hd"
               onClick={(e) => {
-                myScroll(refPres, -180);
+                myScroll(refPres, -80);
               }}
             >
               Présentation
